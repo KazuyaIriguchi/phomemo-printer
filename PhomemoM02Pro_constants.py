@@ -1,7 +1,6 @@
-# Phomemo M02Pro Specification
-DEVICE_NAME = 'M02 Pro'
-CHARACTERISTIC_UUID_WRITE = '0000ff02-0000-1000-8000-00805f9b34fb'
+# Phomemo T02 Specification
+DEVICE_NAME = "T02"
+CHARACTERISTIC_UUID_WRITE = "0000ff02-0000-1000-8000-00805f9b34fb"
 
-# 1 line = 576 dots = 72 bytes x 8 bit
-DOT_PER_LINE = 576
+DOT_PER_LINE = 392  # 392 dots = 49 bytes x 8 bit
 BYTE_PER_LINE = DOT_PER_LINE // 8
