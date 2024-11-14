@@ -27,8 +27,10 @@ async def main():
     # print
     async with BleakClient(device) as client:
         await init_printer(client=client)
-        await print_text(client=client, text='Hello Phomemo M02Pro!', fontsize=32)
-        await print_image(client=client, image_path='sample.jpg')
+        await print_text(client=client, text="Hello, I'm Jullie!", fontsize=32)
+        await print_image(
+            client=client, image_path="Jullie_face_Co-Living_Robotics_2.png"
+        )
         await feed(client=client, line=3)
         # wait a little to avoid disconnect
         await asyncio.sleep(2)
